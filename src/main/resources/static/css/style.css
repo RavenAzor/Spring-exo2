@@ -1,0 +1,23 @@
+body {
+    background-image: url("../image/yoda.jpg");
+}
+
+.navbar {
+    width: 100%;
+    height: 10rem;
+    color: #1A2A42;
+    margin: 0 auto;
+}
+
+.navbar-div {
+    display: grid;
+}
+
+.navbar-header, .navbar-nav {
+    display: grid;
+}
+
+.title {
+    color: blue;
+}
+

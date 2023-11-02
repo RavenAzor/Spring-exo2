@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
+</head>
+<body>
+<div th:insert="navbar :: navbar"></div>
+<h1 class="title">Add a new student :</h1>
+
+<form th:action="@{/submitStudent}" th:object="${studentSubmit}" method="post" class="form">
+    <h2 class="student">Enter student's name here :</h2>
+    <input th:field="*{name}" type="text" placeholder="Student's name">
+    <h2 class="student">Enter student's age here :</h2>
+    <input th:field="*{age}" type="number" placeholder="Student's age" min="0" max="150">
+    <button type="submit" class="btn">Confirm</button>
+</form>
+
+<div th:insert="footer :: footer"></div>
+</body>
+</html>

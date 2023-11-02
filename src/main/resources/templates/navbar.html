@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
+</head>
+<body>
+<nav th:fragment="navbar" class="navbar">
+    <div class="navbar-div">
+        <div class="navbar-header">
+            <img src="/image/code.jpg" style="width: 60px"></img>
+        </div>
+        <ul class="navbar-nav">
+            <li><a class="navbar-link" th:href="@{/students}">Home</a></li>
+            <li><a class="nav-link" th:href="@{/students/form}">Form</a></li>
+            <li><a class="nav-link" th:href="@{/students/list}">List of students</a></li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
